@@ -129,7 +129,8 @@ Exemplo esperado:
 </pre>
 
 Estrutura do Back-End
-Seguir padrão de separaćão adotado pelo Nestjs.
+
+Seguir padrão de separação adotado pelo Nestjs.
 
 # 📦 Entrega
 
