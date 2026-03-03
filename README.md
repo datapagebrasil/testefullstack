@@ -115,9 +115,9 @@ Esperamos:
 Você pode integrar com alguma API pública para enriquecer o projeto (ex: API de marcas de veículos), mas não é obrigatório.
 
 # 📁 Estrutura do Projeto
-Inclua no repositório:
 
 Estrutura do Front-End
+
 Exemplo esperado:
 <pre> src/
  ├─ pages/
@@ -131,7 +131,41 @@ Exemplo esperado:
 Estrutura do Back-End
 
 Seguir padrão de separação adotado pelo Nestjs.
-
+<pre>
+  src/
+├─ modules/
+│  ├─ users/
+│  │  ├─ dtos/
+│  │  │  └─ create-user.dto.ts
+│  │  ├- users.controller.ts
+│  │  ├- users.service.ts
+│  │  ├- users.repository.ts
+│  │  └─ users.module.ts
+│  └─ auth/
+│     ├─ strategies/
+│     ├─ dtos/
+│     ├─ auth.controller.ts
+│     ├─ auth.service.ts
+│     ├─ auth.repository.ts
+│     └─ auth.module.ts
+│
+├─ utils/
+│  ├─ decorators/
+│  ├─ guards/
+│  ├─ filters/
+│  ├─ interceptors/
+│  ├─ pipes/
+│  └─ functions/
+│
+├─ config/
+│  └─ app.config.ts
+│
+├─ middlewares/
+│  └─ logger.middleware.ts
+│
+├─ main.ts
+└─ app.module.ts
+</pre>
 # 📦 Entrega
 
 No repositório, inclua:
