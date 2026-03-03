@@ -88,8 +88,62 @@ Requisitos técnicos:
 -Tratamento de erro em caso de falha no upload
 - Feedback visual de loading
 
-# 📄 Página de Detalhes do Veículo
+# 🗂️ Página de Listagem com Cards de Veículos
 
+Além da listagem em tabela (caso implementada), deverá existir uma página de listagem em formato de cards, simulando um catálogo de veículos.
+
+
+Exemplo de rota:
+
+<pre> /vehicles</pre>
+
+# 🧱 Estrutura dos Cards
+
+Cada veículo deve ser exibido em formato de card, contendo no mínimo:
+- Foto principal do veículo
+- Marca e modelo
+- Ano
+- Valor formatado
+- Status (disponível, vendido, reservado)
+- Botão para visualizar detalhes
+- Botão para editar
+- Botão para excluir (caso tenha permissão)
+
+# 🎨 Requisitos de UX
+
+Esperamos:
+- Layout responsivo (grid adaptável para mobile, tablet e desktop)
+- Uso adequado de componentes do Quasar (ex: QCard, QImg, QBadge)
+- Feedback visual de loading (ex: QSkeleton)
+- Estado vazio amigável quando não houver veículos cadastrados
+- Tratamento visual para erro de carregamento
+- Indicador visual de status (ex: badge colorida)
+
+# 🔍 Funcionalidades adicionais na listagem
+
+A página deve conter:
+- Campo de busca (marca/modelo)
+- Filtro por status
+- Ordenação (ex: por valor ou ano)
+- Paginação (client-side ou server-side)
+
+Diferenciais:
+- Busca com debounce
+- Paginação server-side
+- Skeleton loading
+- Animação suave ao carregar cards
+
+# 🧠 Avaliaremos nesta etapa
+
+- Organização da UI
+- Componentização (ex: VehicleCard.vue)
+- Reatividade e filtros
+- Estruturação de estado (Pinia)
+- Performance na renderização da lista
+
+Responsividade real
+
+# 📄 Página de Detalhes do Veículo
 Deve existir uma rota específica para visualização individual do veículo.
 
 Exemplo:
