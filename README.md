@@ -123,6 +123,7 @@ Diferenciais:
 - Carrossel (ex: QCarousel do Quasar)
 - Skeleton loading para imagens
 - Lazy loading
+- Zoom na imagem
 
 # 🖥️ Requisitos Técnicos — Front-End
 
