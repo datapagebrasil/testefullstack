@@ -31,6 +31,7 @@ Implemente:
 - Persistência de sessão
 - Tratamento de token expirado
 - Interceptors para requisições
+- Testes automatizados com Jest (unitários ou e2e)
 
 # 🚗 CRUD de Veículos
 
@@ -90,17 +91,24 @@ Esperamos:
 
 # Requisitos Técnicos — Back-End
 
-Pode utilizar a tecnologia que preferir (Node.js recomendado).
+Obrigatório utilizar:
+- Node
+- Nestjs
+- MySQL
+- Prisma
 
+Diferenciais
+- Docker
+- Redis
+  
 Esperamos:
 - Estrutura organizada
 - Separação de camadas (controller, service, repository)
 - Validação de dados no backend
 - Autenticação
 - Tratamento de erros
+- Persistência de dados com MySQL via Prisma
 
-CRUD persistindo dados
-Pode utilizar: PostgreSQL, MySQL, MongoDB, SQLite (Ou outro banco de sua preferência)
 
 # 🌐 Integração com API Pública (Opcional)
 Você pode integrar com alguma API pública para enriquecer o projeto (ex: API de marcas de veículos), mas não é obrigatório.
