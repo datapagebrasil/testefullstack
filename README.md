@@ -126,18 +126,10 @@ Exemplo esperado:
  ├─ stores/
  ├─ services/
  ├─ router/
- ├─ composables/
 </pre>
 
 Estrutura do Back-End
-Separação clara de:
-<pre> src/
- ├─ controllers/
- ├─ services/
- ├─ repositories/
- ├─ middlewares/
- ├─ routes/
-</pre>
+Seguir padrão de separaćão adotado pelo Nestjs.
 
 # 📦 Entrega
 
