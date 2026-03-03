@@ -71,6 +71,59 @@ Com:
 - Confirmação antes de excluir
 - Feedback visual
 
+📤 Upload de Fotos
+- Ao criar ou editar um veículo, deve ser possível:
+- Adicionar uma ou múltiplas fotos
+- Visualizar preview antes de salvar
+- Remover imagens antes do envio
+
+Validar:
+- Tipo de arquivo (JPG, PNG, WEBP) (Tamanho máximo (ex: 5MB por imagem))
+
+Requisitos técnicos:
+
+- Upload via formulário (multipart/form-data)
+- Armazenamento das imagens no backend
+- Associação das imagens ao veículo no banco de dados
+-Tratamento de erro em caso de falha no upload
+- Feedback visual de loading
+
+# 📄 Página de Detalhes do Veículo
+
+Deve existir uma rota específica para visualização individual do veículo.
+
+Exemplo:
+<pre>/vehicles/:id</pre>
+
+Essa página deve conter:
+
+📌 Informações do veículo
+
+- Marca
+- Modelo
+- Ano
+- Placa
+- Cor
+- Valor formatado
+- Tipo
+- Status
+
+🖼️ Galeria de Fotos
+
+A página deve exibir:
+
+- Galeria com imagem principal
+- Miniaturas clicáveis
+- Alternância entre imagens
+- Layout responsivo
+- Estado vazio caso não existam fotos
+
+Diferenciais:
+- Modal para visualizar imagem ampliada
+- Carrossel (ex: QCarousel do Quasar)
+- Skeleton loading para imagens
+- Lazy loading
+
 # 🖥️ Requisitos Técnicos — Front-End
 
 Obrigatório utilizar:
